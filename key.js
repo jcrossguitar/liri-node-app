@@ -7,8 +7,8 @@
 var Spotify = require('node-spotify-api');
  
 var spotify = new Spotify({
-  id: b660b9d15cf64d169086feeee9c25eaa,
-  secret: 6b27fc3404eb4d0a91648c6870b7e361
+  id: "b660b9d15cf64d169086feeee9c25eaa",
+  secret: "6b27fc3404eb4d0a91648c6870b7e361"
 });
  
 spotify.search({ type: 'track', query: 'All the Small Things' }, function(err, data) {
@@ -18,3 +18,5 @@ spotify.search({ type: 'track', query: 'All the Small Things' }, function(err, d
  
 console.log(data); 
 });
+
+// above /\ this code works!!
