@@ -28,7 +28,9 @@ var spotify = new Spotify({
   secret: "6b27fc3404eb4d0a91648c6870b7e361"
 });
  
-spotify.search({ type: 'track', query: search }, function(err, data) {
+spotify
+    .search({ type: 'track', query: search }, function(err, data) {
+    
   if (err) {
     return console.log('Error occurred: ' + err);
   }
@@ -38,5 +40,5 @@ console.log(data);
 
 // above /\ this code works!!
 
-// "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
+// var concertUrl = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
 
