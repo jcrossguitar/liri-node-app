@@ -30,7 +30,6 @@ var spotify = new Spotify({
  
 spotify
     .search({ type: 'track', query: search }, function(err, data) {
-    
   if (err) {
     return console.log('Error occurred: ' + err);
   }
