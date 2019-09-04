@@ -1,10 +1,15 @@
-// require("dotenv").config();
+var fs = require('fs');
+var env = require("dotenv").config();
+var inquire = require('inquirer')
 
-// var keys = require("./key.js");
+var keys = require("./key.js");
 
 // var spotify = new Spotify(keys.spotify);
 
 var axios = require("axios");
+var request = require('request');
+var Spotify = require('node-spotify-api');
+
 
 // Store all of the arguments in an array
 var nodeArgs = process.argv;
